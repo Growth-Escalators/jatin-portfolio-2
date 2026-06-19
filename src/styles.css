@@ -753,67 +753,6 @@ img {
 }
 
 /* ============================================================
-   TRACK RECORD — reuses .exp-card
-============================================================ */
-.track-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 4px;
-}
-.track-intl-tag {
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
-  background: var(--ink);
-  border-radius: 999px;
-  padding: 4px 10px;
-}
-.track-card-intl {
-  border-color: rgba(232, 130, 30, 0.35);
-  box-shadow: 0 16px 40px rgba(60, 45, 25, 0.08);
-}
-.track-card-intl::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: var(--radius);
-  pointer-events: none;
-  background: linear-gradient(135deg, rgba(232, 130, 30, 0.06), transparent 55%);
-}
-.track-card { position: relative; }
-.track-niche {
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--accent);
-  text-transform: uppercase;
-  margin-top: 2px;
-}
-.track-held {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--ink-2);
-  margin-top: 16px;
-}
-.track-held i {
-  color: var(--accent);
-  font-style: normal;
-}
-.track-result {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: var(--muted);
-  margin-top: 8px;
-}
-
-/* ============================================================
    CASE STUDIES — deep + mini
 ============================================================ */
 .case-deep {

@@ -25,64 +25,38 @@ export const HERO_STATS = [
 ];
 
 /* ============================================================
-   TRACK RECORD — brands I've held and scaled
-============================================================ */
-export const TRACK_RECORD = [
-  {
-    name: "Paraiso",
-    niche: "Fashion D2C",
-    held: "[N] months",
-    result: "[headline result]",
-  },
-  {
-    name: "Odra Organics",
-    niche: "Organics / Wellness D2C",
-    held: "[N] months",
-    result: "[headline result]",
-  },
-  {
-    name: "Swarnsootra",
-    niche: "Jewellery",
-    location: "Singapore",
-    international: true,
-    held: "[N] months",
-    result: "[headline result]",
-  },
-];
-
-/* ============================================================
    CASE STUDIES — 2 deep + mini grid
 ============================================================ */
 export const CASE_STUDIES = [
   {
-    name: "[PLACEHOLDER — Client A]",
-    industry: "[Industry]",
+    name: "Paraiso",
+    industry: "Fashion D2C",
     role: "Fractional Meta Ads Media Buyer",
     problem:
-      "[PLACEHOLDER — what was broken in the account when I came in. Spend leaking, plateaued ROAS, creative fatigue, attribution gaps, etc.]",
+      "Account was stuck at a ~1.9× ROAS with revenue plateaued. Creative was fatigued, structure was leaking spend, and scaling attempts kept breaking the unit economics.",
     action:
-      "[PLACEHOLDER — what I actually did. Specific structural changes, creative testing framework, CRO moves, etc.]",
+      "Rebuilt the account from the ground up — tight ICP, fresh creative testing across angles and hooks, disciplined budget pacing, and CRO on the landing experience to lift conversion alongside the ads.",
     result:
-      "[PLACEHOLDER — the outcome in plain terms. ROAS lift, cost-per-purchase trend, retention months, etc. No INR.]",
+      "ROAS lifted from 1.9× to 3.2× and revenue scaled over 6× in 60 days — profitably. Account is still running.",
   },
   {
-    name: "[PLACEHOLDER — Client B]",
-    industry: "[Industry]",
+    name: "Sable",
+    industry: "D2C · Seasonal Campaign",
     role: "Fractional Meta Ads Media Buyer",
     problem:
-      "[PLACEHOLDER — the diagnosis. What was actually holding scale back, beyond the surface metrics.]",
+      "Valentine's season is brutal — CPMs spike, every brand fights for the same window, and most accounts either overspend on cold traffic or pull back too early and miss the peak.",
     action:
-      "[PLACEHOLDER — what I did across ads + funnel. Tie execution to the diagnosis above.]",
+      "Built a Valentine's-specific campaign architecture: tight audience layering, angle-tested creatives mapped to the gifting intent, and aggressive budget pacing through the peak days so spend went where the conversions were.",
     result:
-      "[PLACEHOLDER — the result, in the founder's language. Profitability, scale, retention months.]",
+      "Delivered a 6.57× ROAS through the Valentine's window and sold the brand out of inventory before the season closed.",
   },
 ];
 
 export const MINI_CASES = [
-  { name: "Paraiso", industry: "Fashion D2C", note: "Long-standing partnership" },
-  { name: "Odra Organics", industry: "Wellness D2C", note: "Scaled and held" },
-  { name: "Swarnsootra", industry: "Jewellery · Singapore", note: "International account" },
-  { name: "[PLACEHOLDER]", industry: "[Industry]", note: "[Short note]" },
+  { name: "Odra Organics", industry: "Organics / Wellness D2C", note: "Scaled and held long-term" },
+  { name: "Swarnsootra", industry: "Jewellery · Singapore", note: "International D2C account" },
+  { name: "Dr Dheeraj Dubay", industry: "Personal Brand", note: "Lead-gen at scale" },
+  { name: "Elixzor Media", industry: "Media / Agency", note: "Profitable scaling partner" },
 ];
 
 /* ============================================================
@@ -171,7 +145,6 @@ export const WHY = [
 ============================================================ */
 export const NAV = [
   { label: "Home", href: "#home" },
-  { label: "Track Record", href: "#track-record" },
   { label: "Case Studies", href: "#case-studies" },
   { label: "Method", href: "#method" },
   { label: "Tools", href: "#tools" },

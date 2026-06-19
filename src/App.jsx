@@ -1,7 +1,6 @@
 import ScrollProgress from "./components/ScrollProgress.jsx";
 import Nav from "./components/Nav.jsx";
 import Hero from "./components/Hero.jsx";
-import TrackRecord from "./components/TrackRecord.jsx";
 import CaseStudies from "./components/CaseStudies.jsx";
 import Method from "./components/Method.jsx";
 import Stack from "./components/Stack.jsx";
@@ -16,7 +15,6 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <TrackRecord />
         <CaseStudies />
         <Method />
         <Stack />
