@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { PROFILE, PORTRAIT, INDUSTRIES } from "../data.js";
+import { PROFILE, PORTRAIT } from "../data.js";
 
 const EASE = [0.22, 1, 0.36, 1];
 
@@ -15,13 +15,6 @@ const rise = {
 export default function Hero() {
   return (
     <section className="hero" id="home">
-      {/* animated ambient background */}
-      <div className="hero-bgfx" aria-hidden="true">
-        <span className="blob blob-1" />
-        <span className="blob blob-2" />
-        <span className="grid-lines" />
-      </div>
-
       <div className="hero-grid">
         {/* ---------- left column ---------- */}
         <div className="hero-copy">
@@ -113,7 +106,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* ---------- right column: framed portrait + floating card ---------- */}
+        {/* ---------- right column: framed portrait ---------- */}
         <motion.div
           className="hero-visual"
           initial={{ opacity: 0, scale: 0.96, x: 30 }}
@@ -123,52 +116,11 @@ export default function Hero() {
           <span className="deco deco-dots deco-tl" aria-hidden="true" />
           <span className="deco deco-arc" aria-hidden="true" />
           <span className="deco deco-dots deco-br" aria-hidden="true" />
-
           <div className="portrait">
             <img src={PORTRAIT} alt={`${PROFILE.name} — ${PROFILE.roles.join(", ")}`} />
           </div>
-
-          {/* floating glass mini-card */}
-          <motion.div
-            className="float-card"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: EASE, delay: 1 }}
-          >
-            <span className="float-spark">▲</span>
-            <div>
-              <strong>+212%</strong>
-              <em>avg. revenue lift</em>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="float-pill"
-            initial={{ opacity: 0, y: -16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: EASE, delay: 1.15 }}
-          >
-            <span className="float-pill-dot" /> Founder · Growth Escalators
-          </motion.div>
         </motion.div>
       </div>
-
-      {/* trusted-by marquee strip */}
-      <motion.div
-        className="trust-strip"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.3 }}
-      >
-        <span className="trust-label">Scaling brands across</span>
-        <div className="trust-rail">
-          <div className="trust-track">
-            {[...INDUSTRIES, ...INDUSTRIES].map((x, i) => (
-              <span key={i}>{x}</span>
-            ))}
-          </div>
-        </div>
-      </motion.div>
     </section>
   );
 }

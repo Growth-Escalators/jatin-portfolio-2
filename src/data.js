@@ -116,80 +116,10 @@ export const INDUSTRIES = [
 export const NAV = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Stack", href: "#stack" },
   { label: "Expertise", href: "#expertise" },
-  { label: "Process", href: "#process" },
   { label: "Projects", href: "#projects" },
-  { label: "Reviews", href: "#reviews" },
+  { label: "Results", href: "#results" },
   { label: "Contact", href: "#contact" },
-];
-
-/* tools & platforms I run growth on */
-export const STACK = [
-  { name: "Meta Ads", cat: "Paid" },
-  { name: "Google Ads", cat: "Paid" },
-  { name: "YouTube Ads", cat: "Paid" },
-  { name: "Shopify", cat: "Build" },
-  { name: "Klaviyo", cat: "Retention" },
-  { name: "WhatsApp API", cat: "Retention" },
-  { name: "GA4", cat: "Analytics" },
-  { name: "Google Tag Manager", cat: "Analytics" },
-  { name: "Meta Pixel", cat: "Analytics" },
-  { name: "Zapier / Make", cat: "Automation" },
-  { name: "Notion", cat: "Ops" },
-  { name: "Figma", cat: "Design" },
-];
-
-/* how I work — 4-step engagement */
-export const PROCESS = [
-  {
-    n: "01",
-    title: "Audit & Discovery",
-    desc: "Deep dive into your funnel, ad accounts, data and unit economics to find what's really holding growth back.",
-  },
-  {
-    n: "02",
-    title: "Strategy & Roadmap",
-    desc: "Positioning, offers and a 90-day growth plan — the strategy before a single rupee is spent.",
-  },
-  {
-    n: "03",
-    title: "Build & Launch",
-    desc: "Campaigns, funnels, Shopify builds and automations — shipped fast and engineered to convert.",
-  },
-  {
-    n: "04",
-    title: "Scale & Optimize",
-    desc: "Test, iterate and report. We scale what works and compound the returns month over month.",
-  },
-];
-
-/* client reviews — replace quotes with real testimonials when available */
-export const TESTIMONIALS = [
-  {
-    quote:
-      "Jatin rebuilt our entire paid engine. A single reel crossed 5M views and we did ₹4L in sales within 28 days. He just gets growth.",
-    name: "Paraiso Comfortwears",
-    role: "Apparel Brand",
-  },
-  {
-    quote:
-      "The launch funnel Jatin architected took us past ₹8Cr in revenue and 1,000+ clients. Strategic, fast and obsessed with numbers.",
-    name: "Elixzor AI",
-    role: "SaaS",
-  },
-  {
-    quote:
-      "From website to personal branding, Jatin built our entire digital authority. 24,000+ surgeries now showcased and credibility through the roof.",
-    name: "Dr. Dheeraj Dubay",
-    role: "Healthcare",
-  },
-  {
-    quote:
-      "Our Instagram reach crossed 20M with the viral content framework he designed. Reels that actually convert into customers.",
-    name: "Odra Organics",
-    role: "Wellness & Ayurveda",
-  },
 ];
 
 /* portrait — swap for a real photo of Jatin when available */
