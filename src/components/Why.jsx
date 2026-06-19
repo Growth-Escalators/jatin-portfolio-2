@@ -1,5 +1,6 @@
 import Reveal from "./Reveal.jsx";
 import { WHY } from "../data.js";
+import { WHY_ICON } from "./Icons.jsx";
 
 export default function Why() {
   return (
@@ -11,17 +12,27 @@ export default function Why() {
         </Reveal>
 
         <div className="exp-grid why-grid">
-          {WHY.map((w, i) => (
-            <Reveal
-              className={`exp-card${w.lead ? " exp-card-lead" : ""}`}
-              key={w.title}
-              delay={0.05 + (i % 3) * 0.08}
-            >
-              <span className="exp-n">{w.n}</span>
-              <h3>{w.title}</h3>
-              <p>{w.desc}</p>
-            </Reveal>
-          ))}
+          {WHY.map((w, i) => {
+            const Icon = WHY_ICON[w.title];
+            return (
+              <Reveal
+                className={`exp-card${w.lead ? " exp-card-lead" : ""}`}
+                key={w.title}
+                delay={0.05 + (i % 3) * 0.08}
+              >
+                <div className="why-head">
+                  <span className="exp-n">{w.n}</span>
+                  {Icon && (
+                    <span className="why-icon" aria-hidden="true">
+                      <Icon />
+                    </span>
+                  )}
+                </div>
+                <h3>{w.title}</h3>
+                <p>{w.desc}</p>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

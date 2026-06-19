@@ -1,5 +1,6 @@
 import Reveal from "./Reveal.jsx";
 import { TOOLS } from "../data.js";
+import { TOOL_ICON } from "./Icons.jsx";
 
 export default function Stack() {
   return (
@@ -14,12 +15,20 @@ export default function Stack() {
         </Reveal>
 
         <div className="stack-grid">
-          {TOOLS.map((s, i) => (
-            <Reveal className="stack-chip" key={s.name} delay={0.03 * i}>
-              <span className="stack-name">{s.name}</span>
-              <span className="stack-cat">{s.cat}</span>
-            </Reveal>
-          ))}
+          {TOOLS.map((s, i) => {
+            const Icon = TOOL_ICON[s.name];
+            return (
+              <Reveal className="stack-chip" key={s.name} delay={0.03 * i}>
+                {Icon && (
+                  <span className="stack-icon" aria-hidden="true">
+                    <Icon />
+                  </span>
+                )}
+                <span className="stack-name">{s.name}</span>
+                <span className="stack-cat">{s.cat}</span>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>
