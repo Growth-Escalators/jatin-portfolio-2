@@ -1,5 +1,5 @@
 import Reveal from "./Reveal.jsx";
-import { PROFILE } from "../data.js";
+import { PROFILE, NAV } from "../data.js";
 
 export default function Contact() {
   return (
@@ -7,29 +7,36 @@ export default function Contact() {
       <div className="wrap">
         <Reveal className="kicker">// Contact</Reveal>
         <Reveal as="h2" className="contact-title" delay={0.05}>
-          Let's build something <span className="accent">great</span>.
+          Let's see if I can <span className="accent">move your revenue</span>.
         </Reveal>
         <Reveal as="p" className="contact-lead" delay={0.1}>
-          Whether you're looking to scale your brand, improve ROAS, build a
-          high-converting store or create a predictable growth engine — I'd love to
-          help.
+          Bring me your account, your numbers, and the bottleneck you can't crack.
+          I usually respond within 24 hours.
         </Reveal>
 
         <Reveal className="contact-actions" delay={0.15}>
-          <a className="btn btn-wa" href={PROFILE.whatsapp} target="_blank" rel="noopener noreferrer">
-            <span className="wa-icon" aria-hidden="true">✆</span> Chat on WhatsApp
+          <a
+            className="btn btn-dark"
+            href={PROFILE.cal}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span aria-hidden="true">▦</span> Book a Call
           </a>
-          <a className="btn btn-dark" href={`mailto:${PROFILE.email}`}>
-            {PROFILE.email}
+          <a
+            className="btn btn-wa"
+            href={PROFILE.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="wa-icon" aria-hidden="true">✆</span> Chat on WhatsApp
           </a>
         </Reveal>
 
         <Reveal className="contact-meta" delay={0.2}>
+          <a href={`mailto:${PROFILE.email}`}>{PROFILE.email}</a>
           <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer">
             LinkedIn ↗
-          </a>
-          <a href={PROFILE.agency} target="_blank" rel="noopener noreferrer">
-            Growth Escalators ↗
           </a>
           <span>{PROFILE.location}</span>
         </Reveal>
@@ -38,7 +45,14 @@ export default function Contact() {
       <footer className="footer">
         <div className="wrap footer-inner">
           <span className="footer-logo">{PROFILE.logo}</span>
-          <span>© 2026 {PROFILE.name} · Founder, Growth Escalators</span>
+          <nav className="footer-nav" aria-label="Footer">
+            {NAV.map((item) => (
+              <a key={item.href} href={item.href}>
+                {item.label}
+              </a>
+            ))}
+          </nav>
+          <span>© 2026 {PROFILE.name}</span>
         </div>
       </footer>
     </section>

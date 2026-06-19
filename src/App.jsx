@@ -1,14 +1,12 @@
 import ScrollProgress from "./components/ScrollProgress.jsx";
 import Nav from "./components/Nav.jsx";
 import Hero from "./components/Hero.jsx";
-import Snapshot from "./components/Snapshot.jsx";
+import TrackRecord from "./components/TrackRecord.jsx";
+import CaseStudies from "./components/CaseStudies.jsx";
+import Method from "./components/Method.jsx";
 import Stack from "./components/Stack.jsx";
-import Expertise from "./components/Expertise.jsx";
-import Process from "./components/Process.jsx";
-import Projects from "./components/Projects.jsx";
-import Results from "./components/Results.jsx";
-import Testimonials from "./components/Testimonials.jsx";
-import Industries from "./components/Industries.jsx";
+import Why from "./components/Why.jsx";
+import FounderNote from "./components/FounderNote.jsx";
 import Contact from "./components/Contact.jsx";
 
 export default function App() {
@@ -18,14 +16,12 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <Snapshot />
+        <TrackRecord />
+        <CaseStudies />
+        <Method />
         <Stack />
-        <Expertise />
-        <Process />
-        <Projects />
-        <Results />
-        <Testimonials />
-        <Industries />
+        <Why />
+        <FounderNote />
         <Contact />
       </main>
     </>

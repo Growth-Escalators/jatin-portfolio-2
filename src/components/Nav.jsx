@@ -41,8 +41,13 @@ export default function Nav() {
             <a className="nav-resume" href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
-            <a className="nav-hire" href="#contact">
-              <span className="nav-hire-dot" /> Hire Me
+            <a
+              className="nav-hire"
+              href={PROFILE.cal}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="nav-hire-dot" /> Book a Call
             </a>
           </div>
 
@@ -63,8 +68,14 @@ export default function Nav() {
             {item.label}
           </a>
         ))}
-        <a className="nav-hire" href="#contact" onClick={() => setOpen(false)}>
-          <span className="nav-hire-dot" /> Hire Me
+        <a
+          className="nav-hire"
+          href={PROFILE.cal}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => setOpen(false)}
+        >
+          <span className="nav-hire-dot" /> Book a Call
         </a>
       </div>
     </>

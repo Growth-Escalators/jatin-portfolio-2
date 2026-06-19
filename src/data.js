@@ -1,195 +1,182 @@
 /* ============================================================
-   Single source of truth — Jatin Agrawal / Growth Escalators
+   Single source of truth — Jatin Agrawal
+   Fractional Meta Ads Media Buyer · US/EU D2C founders
 ============================================================ */
 
 export const PROFILE = {
   name: "Jatin Agrawal",
   logo: "Jatin.",
-  roles: ["Founder", "Growth Strategist", "Performance Marketer"],
+  role: "Fractional Meta Ads Media Buyer",
   tagline:
-    "Helping brands scale through Performance Marketing, CRO, Shopify Development and Growth Systems.",
-  intro:
-    "I'm Jatin — over the last 3+ years I've helped 187+ brands turn ad spend into predictable, compounding revenue. From performance marketing to Shopify and growth systems, I build the engines that scale brands.",
+    "I scale D2C and e-commerce brands profitably — and keep them. Async, overlapping US & EU hours.",
   email: "hello@growthescalators.com",
-  whatsapp: "https://wa.me/919999999999",
+  whatsapp: "https://wa.me/917733888883",
+  cal: "https://cal.com/growth-escalators/30min?overlayCalendar=true",
   linkedin: "https://www.linkedin.com/in/jatinagrawal02/",
   agency: "https://www.growthescalators.com",
-  location: "Jaipur, India",
-  chips: ["Founder at Growth Escalators", "eCommerce & D2C", "Jaipur, India"],
+  location: "Async · US & EU overlap",
+  availability: "Currently open to 1–2 new accounts",
 };
 
-export const HIGHLIGHTS = [
-  { stat: "187+", label: "Brands Worked With" },
-  { stat: "₹8.9Cr+", label: "Ad Spend Managed" },
-  { stat: "120%", label: "Avg. ROAS Improvement" },
-  { stat: "2.5x", label: "Customer LTV Growth" },
-  { stat: "98%", label: "Client Satisfaction" },
+export const HERO_STATS = [
+  { strong: "8+", label: "D2C brands scaled" },
+  { strong: "9+ mo", label: "Avg. client retention" },
+  { strong: "Profit-first", label: "Scaling" },
 ];
 
-export const EXPERTISE = [
+/* ============================================================
+   TRACK RECORD — brands I've held and scaled
+============================================================ */
+export const TRACK_RECORD = [
+  {
+    name: "Paraiso",
+    niche: "Fashion D2C",
+    held: "[N] months",
+    result: "[headline result]",
+  },
+  {
+    name: "Odra Organics",
+    niche: "Organics / Wellness D2C",
+    held: "[N] months",
+    result: "[headline result]",
+  },
+  {
+    name: "Swarnsootra",
+    niche: "Jewellery",
+    location: "Singapore",
+    international: true,
+    held: "[N] months",
+    result: "[headline result]",
+  },
+];
+
+/* ============================================================
+   CASE STUDIES — 2 deep + mini grid
+============================================================ */
+export const CASE_STUDIES = [
+  {
+    name: "[PLACEHOLDER — Client A]",
+    industry: "[Industry]",
+    role: "Fractional Meta Ads Media Buyer",
+    problem:
+      "[PLACEHOLDER — what was broken in the account when I came in. Spend leaking, plateaued ROAS, creative fatigue, attribution gaps, etc.]",
+    action:
+      "[PLACEHOLDER — what I actually did. Specific structural changes, creative testing framework, CRO moves, etc.]",
+    result:
+      "[PLACEHOLDER — the outcome in plain terms. ROAS lift, cost-per-purchase trend, retention months, etc. No INR.]",
+  },
+  {
+    name: "[PLACEHOLDER — Client B]",
+    industry: "[Industry]",
+    role: "Fractional Meta Ads Media Buyer",
+    problem:
+      "[PLACEHOLDER — the diagnosis. What was actually holding scale back, beyond the surface metrics.]",
+    action:
+      "[PLACEHOLDER — what I did across ads + funnel. Tie execution to the diagnosis above.]",
+    result:
+      "[PLACEHOLDER — the result, in the founder's language. Profitability, scale, retention months.]",
+  },
+];
+
+export const MINI_CASES = [
+  { name: "Paraiso", industry: "Fashion D2C", note: "Long-standing partnership" },
+  { name: "Odra Organics", industry: "Wellness D2C", note: "Scaled and held" },
+  { name: "Swarnsootra", industry: "Jewellery · Singapore", note: "International account" },
+  { name: "[PLACEHOLDER]", industry: "[Industry]", note: "[Short note]" },
+];
+
+/* ============================================================
+   ESCALATOR METHOD — 5 stages
+============================================================ */
+export const METHOD = [
   {
     n: "01",
-    title: "Performance Marketing",
-    desc: "Meta, Google & YouTube ads engineered for profitable scale, with retargeting that compounds returns.",
-    tags: ["Meta Ads", "Google Ads", "YouTube", "Retargeting"],
+    title: "ICP Lock",
+    desc: "Before a single ad runs, I lock down exactly who we're selling to, what they believe, and what makes them buy.",
+    chips: ["Audience Research", "Offer Analysis", "Competitor Teardown"],
   },
   {
     n: "02",
-    title: "Conversion Rate Optimization",
-    desc: "Landing pages, funnels and relentless A/B testing that turn the same traffic into more revenue.",
-    tags: ["Landing Pages", "Funnels", "A/B Testing"],
+    title: "Creative Lab",
+    desc: "Systematic creative testing across angles, hooks, and formats — engineered to find winners fast, not gamble on them.",
+    chips: ["Hook Testing", "Angle Mapping", "Creative Iteration"],
   },
   {
     n: "03",
-    title: "Shopify Development",
-    desc: "Conversion-focused store builds, theme customization and CRO baked into the customer journey.",
-    tags: ["Store Setup", "CRO", "Theme Customization"],
+    title: "Ad Ops",
+    desc: "Disciplined account structure, budget pacing, and daily management — the execution that actually protects your spend.",
+    chips: ["Account Structure", "Budget Pacing", "Daily Optimization"],
   },
   {
     n: "04",
-    title: "Growth Strategy",
-    desc: "Customer acquisition, retention and scaling frameworks — the plan before the spend.",
-    tags: ["Acquisition", "Retention", "Scaling"],
+    title: "CRO Engine",
+    desc: "I don't stop at the click. Landing page, offer, and funnel get worked until the traffic converts.",
+    chips: ["Landing Pages", "Funnel CRO", "Full-Funnel"],
   },
   {
     n: "05",
-    title: "Personal Branding",
-    desc: "LinkedIn growth, founder positioning and authority building that turns reputation into pipeline.",
-    tags: ["LinkedIn", "Founder Positioning", "Authority"],
+    title: "Scale Protocol",
+    desc: "Once it's profitable, a structured framework to scale spend without breaking the unit economics.",
+    chips: ["Profitable Scaling", "Budget Scaling", "Retention"],
   },
 ];
 
-export const PROJECTS = [
-  {
-    name: "Paraiso Comfortwears",
-    role: "Growth Strategist & Performance Marketer",
-    blurb:
-      "Built a content + paid growth engine that drove visibility and sales for the apparel brand.",
-    results: ["5M+ views on a single reel", "20M+ overall reach", "₹4L sales in 28 days"],
-    href: "https://paraisocomfortwears.com/",
-    industry: "Fashion & Apparel",
-  },
-  {
-    name: "Elixzor AI",
-    role: "Funnel Architect & Growth Consultant",
-    blurb:
-      "Designed the launch funnel and acquisition strategy, then managed the growth campaigns end-to-end.",
-    results: ["₹8Cr+ revenue generated", "1,000+ clients served", "₹45L+ ad spend managed"],
-    industry: "SaaS",
-  },
-  {
-    name: "Dr. Dheeraj Dubay",
-    role: "Website Strategist & Personal Branding Consultant",
-    blurb:
-      "Planned the website build and structured a personal-branding strategy that built real authority.",
-    results: ["24,000+ surgeries showcased", "Stronger online authority", "Improved credibility"],
-    industry: "Healthcare",
-  },
-  {
-    name: "Odra Organics",
-    role: "Social Media Growth Consultant",
-    blurb:
-      "Created a viral content framework and audience-growth strategy for the D2C skincare brand.",
-    results: ["20M+ Instagram reach", "Multiple viral reels", "Audience growth system"],
-    href: "https://odraorganics.com/",
-    industry: "Wellness & Ayurveda",
-  },
-  {
-    name: "SN Herbals",
-    role: "Shopify Consultant & Performance Marketer",
-    blurb:
-      "Led the Shopify store development and conversion journey, with a paid acquisition plan to match.",
-    results: ["Complete store launch", "Conversion-focused UX", "Paid acquisition strategy"],
-    industry: "Wellness & Ayurveda",
-  },
-];
-
-export const INDUSTRIES = [
-  "eCommerce",
-  "Healthcare",
-  "SaaS",
-  "Fashion & Apparel",
-  "Wellness & Ayurveda",
-  "Home & Lifestyle",
-];
-
-export const NAV = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Stack", href: "#stack" },
-  { label: "Expertise", href: "#expertise" },
-  { label: "Process", href: "#process" },
-  { label: "Projects", href: "#projects" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Contact", href: "#contact" },
-];
-
-/* tools & platforms I run growth on */
-export const STACK = [
-  { name: "Meta Ads", cat: "Paid" },
-  { name: "Google Ads", cat: "Paid" },
-  { name: "YouTube Ads", cat: "Paid" },
-  { name: "Shopify", cat: "Build" },
-  { name: "Klaviyo", cat: "Retention" },
-  { name: "WhatsApp API", cat: "Retention" },
+/* ============================================================
+   TOOLS OF THE TRADE — media-buyer / systems stack
+============================================================ */
+export const TOOLS = [
+  { name: "Meta Ads Manager", cat: "Paid" },
   { name: "GA4", cat: "Analytics" },
-  { name: "Google Tag Manager", cat: "Analytics" },
-  { name: "Meta Pixel", cat: "Analytics" },
-  { name: "Zapier / Make", cat: "Automation" },
-  { name: "Notion", cat: "Ops" },
-  { name: "Figma", cat: "Design" },
+  { name: "Triple Whale", cat: "Attribution" },
+  { name: "Shopify", cat: "Storefront" },
+  { name: "n8n", cat: "Automation" },
+  { name: "Claude", cat: "AI Reporting" },
+  { name: "Google Sheets", cat: "Ops" },
 ];
 
-/* how I work — 4-step engagement */
-export const PROCESS = [
+/* ============================================================
+   WHY WORK WITH ME
+============================================================ */
+export const WHY = [
   {
     n: "01",
-    title: "Audit & Discovery",
-    desc: "Deep dive into your funnel, ad accounts, data and unit economics to find what's really holding growth back.",
+    title: "Full-Funnel Ownership",
+    desc: "Ads, landing pages, offer, follow-up — I own the whole journey, not just the ad account.",
+    lead: true,
   },
   {
     n: "02",
-    title: "Strategy & Roadmap",
-    desc: "Positioning, offers and a 90-day growth plan — the strategy before a single rupee is spent.",
+    title: "Profit-First, Not Vanity Metrics",
+    desc: "I optimize to your P&L, not to a dashboard that looks good and changes nothing.",
   },
   {
     n: "03",
-    title: "Build & Launch",
-    desc: "Campaigns, funnels, Shopify builds and automations — shipped fast and engineered to convert.",
+    title: "Retention-Obsessed",
+    desc: "Built to keep and grow accounts — that's why mine stay 9+ months.",
   },
   {
     n: "04",
-    title: "Scale & Optimize",
-    desc: "Test, iterate and report. We scale what works and compound the returns month over month.",
+    title: "Async & Timezone-Ready",
+    desc: "Fully async, overlapping US & EU hours. No handholding, no timezone friction.",
+  },
+  {
+    n: "05",
+    title: "Transparent Reporting",
+    desc: "Clear numbers, plain English, no smoke.",
   },
 ];
 
-/* client reviews — replace quotes with real testimonials when available */
-export const TESTIMONIALS = [
-  {
-    quote:
-      "Jatin rebuilt our entire paid engine. A single reel crossed 5M views and we did ₹4L in sales within 28 days. He just gets growth.",
-    name: "Paraiso Comfortwears",
-    role: "Apparel Brand",
-  },
-  {
-    quote:
-      "The launch funnel Jatin architected took us past ₹8Cr in revenue and 1,000+ clients. Strategic, fast and obsessed with numbers.",
-    name: "Elixzor AI",
-    role: "SaaS",
-  },
-  {
-    quote:
-      "From website to personal branding, Jatin built our entire digital authority. 24,000+ surgeries now showcased and credibility through the roof.",
-    name: "Dr. Dheeraj Dubay",
-    role: "Healthcare",
-  },
-  {
-    quote:
-      "Our Instagram reach crossed 20M with the viral content framework he designed. Reels that actually convert into customers.",
-    name: "Odra Organics",
-    role: "Wellness & Ayurveda",
-  },
+/* ============================================================
+   NAV
+============================================================ */
+export const NAV = [
+  { label: "Home", href: "#home" },
+  { label: "Track Record", href: "#track-record" },
+  { label: "Case Studies", href: "#case-studies" },
+  { label: "Method", href: "#method" },
+  { label: "Tools", href: "#tools" },
+  { label: "Why Me", href: "#why" },
+  { label: "Contact", href: "#contact" },
 ];
 
 /* portrait — swap for a real photo of Jatin when available */

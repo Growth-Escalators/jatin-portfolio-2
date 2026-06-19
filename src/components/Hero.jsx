@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { PROFILE, PORTRAIT, INDUSTRIES } from "../data.js";
+import { PROFILE, PORTRAIT, HERO_STATS } from "../data.js";
 
 const EASE = [0.22, 1, 0.36, 1];
 
@@ -32,12 +32,12 @@ export default function Hero() {
             animate="show"
             custom={0}
           >
-            <span className="badge-dot" /> Open to new projects
+            <span className="badge-dot" /> {PROFILE.availability}
           </motion.span>
 
           <h1 className="hero-title">
             <motion.span variants={rise} initial="hidden" animate="show" custom={1}>
-              Performance
+              Fractional
             </motion.span>
             <motion.span
               className="accent"
@@ -46,10 +46,10 @@ export default function Hero() {
               animate="show"
               custom={2}
             >
-              Marketing
+              Meta Ads
             </motion.span>
             <motion.span variants={rise} initial="hidden" animate="show" custom={3}>
-              Strategist<span className="dot">.</span>
+              Media Buyer<span className="dot">.</span>
             </motion.span>
           </h1>
 
@@ -60,22 +60,8 @@ export default function Hero() {
             animate="show"
             custom={4}
           >
-            {PROFILE.intro}
+            {PROFILE.tagline}
           </motion.p>
-
-          <motion.div
-            className="hero-chips"
-            variants={rise}
-            initial="hidden"
-            animate="show"
-            custom={5}
-          >
-            {PROFILE.chips.map((c) => (
-              <span className="chip" key={c}>
-                <i className="chip-tick">✓</i> {c}
-              </span>
-            ))}
-          </motion.div>
 
           <motion.div
             className="hero-cta"
@@ -84,11 +70,21 @@ export default function Hero() {
             animate="show"
             custom={6}
           >
-            <a className="btn btn-wa" href={PROFILE.whatsapp} target="_blank" rel="noopener noreferrer">
-              <span className="wa-icon" aria-hidden="true">✆</span> Chat on WhatsApp
-            </a>
-            <a className="btn btn-outline" href={`mailto:${PROFILE.email}`}>
+            <a
+              className="btn btn-dark"
+              href={PROFILE.cal}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span aria-hidden="true">▦</span> Book a Call
+            </a>
+            <a
+              className="btn btn-wa"
+              href={PROFILE.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="wa-icon" aria-hidden="true">✆</span> Chat on WhatsApp
             </a>
           </motion.div>
 
@@ -99,17 +95,14 @@ export default function Hero() {
             animate="show"
             custom={7}
           >
-            <span>
-              <strong>187+</strong> BRANDS
-            </span>
-            <span className="hero-stats-sep" />
-            <span>
-              <strong>₹8.9Cr+</strong> AD SPEND
-            </span>
-            <span className="hero-stats-sep" />
-            <span>
-              <strong>120%</strong> ROAS LIFT
-            </span>
+            {HERO_STATS.map((s, i) => (
+              <span key={s.label} style={{ display: "contents" }}>
+                <span>
+                  <strong>{s.strong}</strong> {s.label}
+                </span>
+                {i < HERO_STATS.length - 1 && <span className="hero-stats-sep" />}
+              </span>
+            ))}
           </motion.div>
         </div>
 
@@ -125,10 +118,10 @@ export default function Hero() {
           <span className="deco deco-dots deco-br" aria-hidden="true" />
 
           <div className="portrait">
-            <img src={PORTRAIT} alt={`${PROFILE.name} — ${PROFILE.roles.join(", ")}`} />
+            <img src={PORTRAIT} alt={`${PROFILE.name} — ${PROFILE.role}`} />
           </div>
 
-          {/* floating glass mini-card */}
+          {/* floating glass mini-card — retention proof */}
           <motion.div
             className="float-card"
             initial={{ opacity: 0, y: 20 }}
@@ -137,8 +130,8 @@ export default function Hero() {
           >
             <span className="float-spark">▲</span>
             <div>
-              <strong>+212%</strong>
-              <em>avg. revenue lift</em>
+              <strong>9+ mo</strong>
+              <em>avg. client retention</em>
             </div>
           </motion.div>
 
@@ -148,27 +141,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: EASE, delay: 1.15 }}
           >
-            <span className="float-pill-dot" /> Founder · Growth Escalators
+            <span className="float-pill-dot" /> Async · US & EU overlap
           </motion.div>
         </motion.div>
       </div>
-
-      {/* trusted-by marquee strip */}
-      <motion.div
-        className="trust-strip"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.3 }}
-      >
-        <span className="trust-label">Scaling brands across</span>
-        <div className="trust-rail">
-          <div className="trust-track">
-            {[...INDUSTRIES, ...INDUSTRIES].map((x, i) => (
-              <span key={i}>{x}</span>
-            ))}
-          </div>
-        </div>
-      </motion.div>
     </section>
   );
 }
