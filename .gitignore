@@ -1,6 +1,4 @@
-node_modules/
-dist/
-.vercel
 .DS_Store
-*.local
-Jatin_Agrawal_Resume.pdf
+.vercel/
+node_modules/
+.vercel
