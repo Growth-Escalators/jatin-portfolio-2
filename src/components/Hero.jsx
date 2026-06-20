@@ -48,9 +48,6 @@ export default function Hero() {
             >
               Creative Strategist<span className="dot">.</span>
             </motion.span>
-            <motion.span variants={rise} initial="hidden" animate="show" custom={3}>
-              Meta + Google Ads.
-            </motion.span>
           </h1>
 
           <motion.p
@@ -85,6 +82,15 @@ export default function Hero() {
               rel="noopener noreferrer"
             >
               <span className="wa-icon" aria-hidden="true">✆</span> Chat on WhatsApp
+            </a>
+            <a
+              className="btn btn-outline"
+              href={PROFILE.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              <span aria-hidden="true">↓</span> Download CV
             </a>
           </motion.div>
 

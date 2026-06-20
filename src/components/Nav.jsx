@@ -38,8 +38,8 @@ export default function Nav() {
           </nav>
 
           <div className="nav-actions">
-            <a className="nav-resume" href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer">
-              LinkedIn
+            <a className="nav-resume" href={PROFILE.resume} target="_blank" rel="noopener noreferrer" download>
+              <span aria-hidden="true" style={{ marginRight: 4 }}>↓</span> CV
             </a>
             <a
               className="nav-hire"

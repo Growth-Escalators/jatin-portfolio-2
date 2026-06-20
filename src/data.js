@@ -16,7 +16,48 @@ export const PROFILE = {
   agency: "https://www.growthescalators.com",
   location: "Async · US & EU overlap",
   availability: "Currently open to 1–2 new accounts",
+  resume: "/Jatin_Agrawal_Resume.pdf",
 };
+
+/* ============================================================
+   TRUST STRIP — under hero, quick credibility scan
+============================================================ */
+export const TRUST_STATS = [
+  { strong: "1,500+", label: "Ad creatives shipped", icon: "creatives" },
+  { strong: "8+", label: "D2C brands scaled", icon: "brands" },
+  { strong: "6.57×", label: "Peak campaign ROAS", icon: "roas" },
+  { strong: "US & EU", label: "Async overlap", icon: "async" },
+];
+
+/* ============================================================
+   SYSTEMS I BUILT — credibility beyond media buying
+============================================================ */
+export const SYSTEMS = [
+  {
+    title: "Custom CRM",
+    stack: "React · PostgreSQL",
+    desc: "Internal CRM that replaced spreadsheets — pipeline, contacts, deal flow in one place for the team.",
+    icon: "crm",
+  },
+  {
+    title: "Automated Reporting",
+    stack: "Claude API · Sheets",
+    desc: "Client reports auto-generated from raw ad data — no more Mondays spent stitching screenshots.",
+    icon: "report",
+  },
+  {
+    title: "Lead-Gen Funnel",
+    stack: "Next.js · Vercel",
+    desc: "Custom-built landing funnels for lead-gen campaigns — fast pages, instant CRO iteration.",
+    icon: "funnel",
+  },
+  {
+    title: "Outbound Engine",
+    stack: "n8n · Apollo · GPT",
+    desc: "Automated outbound prospecting — qualified lead drops into the inbox every morning.",
+    icon: "outbound",
+  },
+];
 
 export const HERO_STATS = [
   { strong: "8+", label: "D2C brands scaled" },
@@ -102,7 +143,6 @@ export const TOOLS = [
   { name: "Meta Ads Manager", cat: "Paid Social", slug: "meta", color: "0467DF" },
   { name: "Google Ads", cat: "Paid Search", slug: "googleads", color: "4285F4" },
   { name: "GA4", cat: "Analytics", slug: "googleanalytics", color: "F9AB00" },
-  { name: "Triple Whale", cat: "Attribution", slug: "triplewhale", color: "6E56CF" },
   { name: "Shopify", cat: "Storefront", slug: "shopify", color: "95BF47" },
   { name: "n8n", cat: "Automation", slug: "n8n", color: "EA4B71" },
   { name: "Claude", cat: "AI Workflows", slug: "claude", color: "D97757" },

@@ -88,7 +88,89 @@ export const IconEye = (p) => (
   </svg>
 );
 
+/* ---------- Trust Strip ---------- */
+export const IconCreatives = (p) => (
+  <svg {...base} {...p}>
+    <rect x="3" y="4" width="13" height="13" rx="2" />
+    <rect x="8" y="7" width="13" height="13" rx="2" />
+  </svg>
+);
+
+export const IconBrands = (p) => (
+  <svg {...base} {...p}>
+    <path d="M3 21V8l9-5 9 5v13" />
+    <path d="M9 21v-7h6v7" />
+  </svg>
+);
+
+export const IconRoas = (p) => (
+  <svg {...base} {...p}>
+    <path d="M3 17l5-5 4 4 8-9" />
+    <path d="M14 7h7v7" />
+  </svg>
+);
+
+export const IconClock = (p) => (
+  <svg {...base} {...p}>
+    <circle cx="12" cy="12" r="8.5" />
+    <path d="M12 7v5l3.5 2" />
+  </svg>
+);
+
+/* ---------- Systems ---------- */
+export const IconCrm = (p) => (
+  <svg {...base} {...p}>
+    <rect x="3" y="4" width="18" height="16" rx="2" />
+    <path d="M3 9h18" />
+    <circle cx="8" cy="14" r="1.5" />
+    <path d="M12 13h6M12 16h4" />
+  </svg>
+);
+
+export const IconReport = (p) => (
+  <svg {...base} {...p}>
+    <path d="M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
+    <path d="M14 3v5h5" />
+    <path d="M8 13h8M8 16h6M8 19h4" />
+  </svg>
+);
+
+export const IconLanding = (p) => (
+  <svg {...base} {...p}>
+    <rect x="3" y="4" width="18" height="16" rx="2" />
+    <path d="M3 8h18" />
+    <path d="M7 12h7" />
+    <path d="M7 15h4" />
+    <rect x="14.5" y="13" width="4" height="3" rx="0.5" />
+  </svg>
+);
+
+export const IconOutbound = (p) => (
+  <svg {...base} {...p}>
+    <circle cx="5" cy="12" r="2" />
+    <circle cx="19" cy="6" r="2" />
+    <circle cx="19" cy="18" r="2" />
+    <path d="M7 11l10-4" />
+    <path d="M7 13l10 4" />
+  </svg>
+);
+
 /* ---------- maps ---------- */
+export const TRUST_ICON = {
+  creatives: IconCreatives,
+  brands: IconBrands,
+  roas: IconRoas,
+  async: IconClock,
+};
+
+export const SYSTEM_ICON = {
+  crm: IconCrm,
+  report: IconReport,
+  funnel: IconLanding,
+  outbound: IconOutbound,
+};
+
+
 export const METHOD_ICON = {
   "ICP Lock": IconLock,
   "Creative Lab": IconFlask,
