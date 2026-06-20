@@ -37,7 +37,7 @@ export default function Hero() {
 
           <h1 className="hero-title">
             <motion.span variants={rise} initial="hidden" animate="show" custom={1}>
-              Fractional
+              Media Buyer +
             </motion.span>
             <motion.span
               className="accent"
@@ -46,10 +46,10 @@ export default function Hero() {
               animate="show"
               custom={2}
             >
-              Meta Ads
+              Creative Strategist<span className="dot">.</span>
             </motion.span>
             <motion.span variants={rise} initial="hidden" animate="show" custom={3}>
-              Media Buyer<span className="dot">.</span>
+              Meta + Google Ads.
             </motion.span>
           </h1>
 
@@ -121,7 +121,7 @@ export default function Hero() {
             <img src={PORTRAIT} alt={`${PROFILE.name} — ${PROFILE.role}`} />
           </div>
 
-          {/* floating glass mini-card — retention proof */}
+          {/* floating glass mini-card — proof point */}
           <motion.div
             className="float-card"
             initial={{ opacity: 0, y: 20 }}
@@ -130,8 +130,8 @@ export default function Hero() {
           >
             <span className="float-spark">▲</span>
             <div>
-              <strong>9+ mo</strong>
-              <em>avg. client retention</em>
+              <strong>6×</strong>
+              <em>revenue scale · 60 days</em>
             </div>
           </motion.div>
 

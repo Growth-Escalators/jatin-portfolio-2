@@ -1,14 +1,14 @@
 /* ============================================================
    Single source of truth — Jatin Agrawal
-   Fractional Meta Ads Media Buyer · US/EU D2C founders
+   Media Buyer + Creative Strategist · Meta + Google Ads
 ============================================================ */
 
 export const PROFILE = {
   name: "Jatin Agrawal",
   logo: "Jatin.",
-  role: "Fractional Meta Ads Media Buyer",
+  role: "Media Buyer + Creative Strategist",
   tagline:
-    "I scale D2C and e-commerce brands profitably — and keep them. Async, overlapping US & EU hours.",
+    "I scale D2C and e-commerce brands with performance ads and the creative strategy that makes them convert. Async, US & EU overlap.",
   email: "hello@growthescalators.com",
   whatsapp: "https://wa.me/917733888883",
   cal: "https://cal.com/growth-escalators/30min?overlayCalendar=true",
@@ -20,7 +20,7 @@ export const PROFILE = {
 
 export const HERO_STATS = [
   { strong: "8+", label: "D2C brands scaled" },
-  { strong: "9+ mo", label: "Avg. client retention" },
+  { strong: "6.57×", label: "Peak campaign ROAS" },
   { strong: "Profit-first", label: "Scaling" },
 ];
 
@@ -31,7 +31,7 @@ export const CASE_STUDIES = [
   {
     name: "Paraiso",
     industry: "Fashion D2C",
-    role: "Fractional Meta Ads Media Buyer",
+    role: "Media Buyer + Creative Strategist",
     problem:
       "Account was stuck at a ~1.9× ROAS with revenue plateaued. Creative was fatigued, structure was leaking spend, and scaling attempts kept breaking the unit economics.",
     action:
@@ -42,7 +42,7 @@ export const CASE_STUDIES = [
   {
     name: "Sable",
     industry: "D2C · Seasonal Campaign",
-    role: "Fractional Meta Ads Media Buyer",
+    role: "Media Buyer + Creative Strategist",
     problem:
       "Valentine's season is brutal — CPMs spike, every brand fights for the same window, and most accounts either overspend on cold traffic or pull back too early and miss the peak.",
     action:
@@ -78,7 +78,7 @@ export const METHOD = [
   {
     n: "03",
     title: "Ad Ops",
-    desc: "Disciplined account structure, budget pacing, and daily management — the execution that actually protects your spend.",
+    desc: "Disciplined account structure, budget pacing, and daily management across Meta + Google — the execution that actually protects your spend.",
     chips: ["Account Structure", "Budget Pacing", "Daily Optimization"],
   },
   {
@@ -91,21 +91,22 @@ export const METHOD = [
     n: "05",
     title: "Scale Protocol",
     desc: "Once it's profitable, a structured framework to scale spend without breaking the unit economics.",
-    chips: ["Profitable Scaling", "Budget Scaling", "Retention"],
+    chips: ["Profitable Scaling", "Budget Scaling", "Cross-Channel"],
   },
 ];
 
 /* ============================================================
-   TOOLS OF THE TRADE — media-buyer / systems stack
+   TOOLS OF THE TRADE — media-buyer / creative stack
 ============================================================ */
 export const TOOLS = [
-  { name: "Meta Ads Manager", cat: "Paid" },
-  { name: "GA4", cat: "Analytics" },
-  { name: "Triple Whale", cat: "Attribution" },
-  { name: "Shopify", cat: "Storefront" },
-  { name: "n8n", cat: "Automation" },
-  { name: "Claude", cat: "AI Reporting" },
-  { name: "Google Sheets", cat: "Ops" },
+  { name: "Meta Ads Manager", cat: "Paid Social", slug: "meta", color: "0467DF" },
+  { name: "Google Ads", cat: "Paid Search", slug: "googleads", color: "4285F4" },
+  { name: "GA4", cat: "Analytics", slug: "googleanalytics", color: "F9AB00" },
+  { name: "Triple Whale", cat: "Attribution", slug: "triplewhale", color: "6E56CF" },
+  { name: "Shopify", cat: "Storefront", slug: "shopify", color: "95BF47" },
+  { name: "n8n", cat: "Automation", slug: "n8n", color: "EA4B71" },
+  { name: "Claude", cat: "AI Workflows", slug: "claude", color: "D97757" },
+  { name: "Google Sheets", cat: "Ops", slug: "googlesheets", color: "34A853" },
 ];
 
 /* ============================================================
@@ -115,18 +116,18 @@ export const WHY = [
   {
     n: "01",
     title: "Full-Funnel Ownership",
-    desc: "Ads, landing pages, offer, follow-up — I own the whole journey, not just the ad account.",
+    desc: "Ads, creative, landing pages, offer, follow-up — I own the whole journey, not just the ad account.",
     lead: true,
   },
   {
     n: "02",
     title: "Profit-First, Not Vanity Metrics",
-    desc: "I optimize to your P&L, not to a dashboard that looks good and changes nothing.",
+    desc: "I optimize to your P&L, not a dashboard that looks good and changes nothing.",
   },
   {
     n: "03",
-    title: "Retention-Obsessed",
-    desc: "Built to keep and grow accounts — that's why mine stay 9+ months.",
+    title: "Creative-Led Strategy",
+    desc: "Performance dies without the right creative. I lead the angles, hooks, and tests — not just the budgets.",
   },
   {
     n: "04",
@@ -152,6 +153,4 @@ export const NAV = [
   { label: "Contact", href: "#contact" },
 ];
 
-/* portrait — swap for a real photo of Jatin when available */
-export const PORTRAIT =
-  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1200&auto=format&fit=crop";
+export const PORTRAIT = "/jatin.png";
